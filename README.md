@@ -27,7 +27,7 @@ Data comes in small chunks and you perform some operations on chunks. As more ch
 
 ![Writable Stream](images/Untitled%201.png)
 
-## Readable Stream:**
+## Readable Stream:
 
 - In Readable Stream when you want to empty buffer **stream.on('data',(chunk)=>{})** is used. Default **highWaterMark** value is 64 KB.
 
@@ -35,7 +35,7 @@ Data comes in small chunks and you perform some operations on chunks. As more ch
 
 - In Readable Stream you will automatically have **stream.on('end')** event once reading is done. While in Writable Stream you will have manually emit **stream.end()** after that you will enter in **stream.on('finish')**.
 
-## Duplex Stream:**
+## Duplex Stream:
 
 - It can do Read and Write both at a same time. It has **2** buffer one for Reading and another for writting. You could have one buffer reading data from another source and second buffer writting data to different source.
 - Both buffers are completely isolated.
